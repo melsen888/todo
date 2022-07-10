@@ -20,8 +20,6 @@ function todo() {
         <span>${value}</span>
     `;
     document.getElementById('todo').appendChild(div);
-    document.getElementById("todo").innerHTML = values
-
 }
 
 function remove(input) {
