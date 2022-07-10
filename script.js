@@ -9,12 +9,9 @@ function todo() {
     if (value === ""){
         value = " - ";
     }
-    /*
-    untuk menyimpan list todo ke localstorage
-    */
-    // const localStorage = () => {
-    //     localStorage.setItem('name', value()); //errrrrrrr :)
-    // }
+
+    // @localstorage
+    window.localStorage['todo'] = value; // add value to localstorage key = todo
 
     div.className = 'list';
     
@@ -23,6 +20,8 @@ function todo() {
         <span>${value}</span>
     `;
     document.getElementById('todo').appendChild(div);
+    document.getElementById("todo").innerHTML = values
+
 }
 
 function remove(input) {
